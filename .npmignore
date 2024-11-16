@@ -1,0 +1,36 @@
+# Source and test files (since we'll publish the compiled version)
+src/
+tests/
+jest.config.js
+tsconfig.json
+
+# Development configs
+.eslintrc
+.prettierrc
+.editorconfig
+.github/
+.vscode/
+.idea/
+
+# Debug and local development
+debug/
+selector-finder.js
+instructions/
+
+# Test coverage and reports
+coverage/
+.nyc_output/
+
+# CI/CD
+.travis.yml
+.gitlab-ci.yml
+.circleci/
+
+# Misc
+*.log
+*.tgz
+.DS_Store
+
+# Development documentation
+CONTRIBUTING.md
+CHANGELOG.md 
