@@ -1,0 +1,8 @@
+{
+  "jest.autoRun": {
+    "watch": false,
+    "onSave": "test-file"
+  },
+  "jest.showCoverageOnLoad": true,
+  "jest.enableInlineErrorMessages": true
+} 
