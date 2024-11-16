@@ -1,0 +1,41 @@
+{
+  "name": "ddgs",
+  "version": "1.0.1",
+  "description": "a simple duckduckgo search engine wrapper for node",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:search": "jest tests/search.test.ts",
+    "test:images": "jest tests/images.test.ts",
+    "test:videos": "jest tests/videos.test.ts",
+    "test:news": "jest tests/news.test.ts",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/**/*.ts",
+    "start": "ts-node src/index.ts",
+    "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand tests/search.test.ts"
+  },
+  "keywords": [
+    "duckduckgo",
+    "search",
+    "api"
+  ],
+  "author": "byigitt",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^21.6.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "cheerio": "^1.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.35",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.8.6",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5"
+  }
+}
